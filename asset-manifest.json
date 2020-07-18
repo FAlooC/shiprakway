@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shiprakway/static/css/main.5f361e03.chunk.css",
+    "main.js": "/shiprakway/static/js/main.96a08383.chunk.js",
+    "main.js.map": "/shiprakway/static/js/main.96a08383.chunk.js.map",
+    "runtime-main.js": "/shiprakway/static/js/runtime-main.4616612b.js",
+    "runtime-main.js.map": "/shiprakway/static/js/runtime-main.4616612b.js.map",
+    "static/js/2.afb8fa8a.chunk.js": "/shiprakway/static/js/2.afb8fa8a.chunk.js",
+    "static/js/2.afb8fa8a.chunk.js.map": "/shiprakway/static/js/2.afb8fa8a.chunk.js.map",
+    "index.html": "/shiprakway/index.html",
+    "precache-manifest.0203fbb08e6040755af6fd143d112a62.js": "/shiprakway/precache-manifest.0203fbb08e6040755af6fd143d112a62.js",
+    "service-worker.js": "/shiprakway/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/shiprakway/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.afb8fa8a.chunk.js.LICENSE.txt": "/shiprakway/static/js/2.afb8fa8a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/shiprakway/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4616612b.js",
+    "static/js/2.afb8fa8a.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.96a08383.chunk.js"
+  ]
+}
