@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/shiprakway/static/css/main.7753ede5.chunk.css",
-    "main.js": "/shiprakway/static/js/main.387a0197.chunk.js",
-    "main.js.map": "/shiprakway/static/js/main.387a0197.chunk.js.map",
+    "main.css": "/shiprakway/static/css/main.d59a4ebf.chunk.css",
+    "main.js": "/shiprakway/static/js/main.42190d68.chunk.js",
+    "main.js.map": "/shiprakway/static/js/main.42190d68.chunk.js.map",
     "runtime-main.js": "/shiprakway/static/js/runtime-main.4616612b.js",
     "runtime-main.js.map": "/shiprakway/static/js/runtime-main.4616612b.js.map",
     "static/js/2.6bfd7ab7.chunk.js": "/shiprakway/static/js/2.6bfd7ab7.chunk.js",
     "static/js/2.6bfd7ab7.chunk.js.map": "/shiprakway/static/js/2.6bfd7ab7.chunk.js.map",
     "index.html": "/shiprakway/index.html",
-    "precache-manifest.500eec3e54d3aef12f04f8940355aeb8.js": "/shiprakway/precache-manifest.500eec3e54d3aef12f04f8940355aeb8.js",
+    "precache-manifest.f92cb02f3c06fe23f22123db79a04a9b.js": "/shiprakway/precache-manifest.f92cb02f3c06fe23f22123db79a04a9b.js",
     "service-worker.js": "/shiprakway/service-worker.js",
-    "static/css/main.7753ede5.chunk.css.map": "/shiprakway/static/css/main.7753ede5.chunk.css.map",
+    "static/css/main.d59a4ebf.chunk.css.map": "/shiprakway/static/css/main.d59a4ebf.chunk.css.map",
     "static/js/2.6bfd7ab7.chunk.js.LICENSE.txt": "/shiprakway/static/js/2.6bfd7ab7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4616612b.js",
     "static/js/2.6bfd7ab7.chunk.js",
-    "static/css/main.7753ede5.chunk.css",
-    "static/js/main.387a0197.chunk.js"
+    "static/css/main.d59a4ebf.chunk.css",
+    "static/js/main.42190d68.chunk.js"
   ]
 }
