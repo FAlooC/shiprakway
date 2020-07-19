@@ -1,0 +1,157 @@
+// Custom
+$font-family-base: 'Lato';
+$font-weight-normal: 300;
+$font-weight-bold: 700;
+
+$theme-colors: (
+    'primary': #c82128,
+    'secondary': #672962,
+    'light': #f1edf2,
+    'gray': #3a3a3a,
+    'gray-dark': #303030,
+);
+
+// Bootstrap and its default variables
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    margin: 0;
+    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    //     'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'), url(/public/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+// Footer
+.footer {
+    h2 {
+        font-size: 60px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    a,
+    p {
+        display: block;
+        font-size: 28px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
+// Divider
+.divider {
+    margin: 5px 0;
+    height: 6px;
+    border-radius: 3px;
+}
+
+// Image Header
+.header {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @media only screen and (max-width: 768px) {
+        height: 50vh;
+    }
+}
+
+// down arrow
+.arrow {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: calc(100vh - 60px);
+    animation: bounce 1s infinite ease-out;
+
+    @keyframes bounce {
+        0% {
+            transform: translate(0%);
+        }
+        50% {
+            transform: translate(0, -20%);
+        }
+        100% {
+            transform: translate(0%);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+// Video
+.video {
+    text-align: center;
+    background-color: #e0e0e0;
+}
+iframe {
+    height: 550px;
+    width: 700px;
+    border-radius: 10px;
+    @media only screen and (max-width: 768px) {
+        height: 250px;
+        width: 320px;
+    }
+}
+
+// Normal Text
+.content {
+    font-size: 24px;
+    text-align: justify;
+    @media only screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+// Header Text
+.heading {
+    font-size: 56px;
+    font-weight: 300;
+    @media only screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+// Flow Chart
+.rcorners {
+    border-radius: 15px;
+    border: #672962 3px solid;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 390px) {
+    .rcorners {
+        font-size: 20px;
+        border-width: 1px;
+        margin: 8px 0;
+        padding: 10px;
+    }
+}
+
+.right-box {
+    font-size: 40px;
+    @media only screen and (max-width: 390px) {
+        font-size: 20px;
+    }
+}
