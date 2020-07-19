@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-12 py-md-5 py-3">
-                            <img src={process.env.PUBLIC_URL + '/img/logo-name.png'} alt="logo" />
+                            <img className="w-100" src={process.env.PUBLIC_URL + '/img/logo-name.png'} alt="logo" />
                         </div>
                         <div className="col-md-8 col-12 py-3">
                             <Divider className="bg-light" />
@@ -33,9 +33,9 @@ const Home = () => {
                     title="Shiprakway Youtube video"
                     className="m-md-5 my-3"
                     src="https://www.youtube.com/embed/mV8_nuZ9DPg"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                 ></iframe>
             </div>
             <section className="px-md-5 px-2">
@@ -53,16 +53,18 @@ const Home = () => {
                         <div className="col-12 text-center">Specialised in Injection stretch blow moulding</div>
                     </div>
                     <div className="row py-md-4 py-3">
-                        <div className="col-md-6 col-12 text-secondary text-justify">
-                            <div class="rcorners">Do you track or measure your OEE regularly?</div>
-                            <div class="rcorners">If yes. Is it on right track?</div>
-                            <div class="rcorners">
+                        <div className="col-lg-6 col-12 text-secondary text-justify">
+                            <div className="rcorners">Do you track or measure your OEE regularly?</div>
+                            <div className="rcorners">If yes. Is it on right track?</div>
+                            <div className="rcorners">
                                 If not, what is killing it? Is it speed or Performance or breakdown
                             </div>
-                            <div class="rcorners">Do you track above, measure and do loss analysis</div>
-                            <div class="rcorners">It’s evident that 1% improvement in OEE add 3%~4% to bottom line</div>
+                            <div className="rcorners">Do you track above, measure and do loss analysis</div>
+                            <div className="rcorners">
+                                It’s evident that 1% improvement in OEE add 3%~4% to bottom line
+                            </div>
                         </div>
-                        <div className="col-md-6 col-12 text-primary text-justify">
+                        <div className="col-lg-6 col-12 text-primary text-justify">
                             <p className="right-box p-md-4 p-1">
                                 With three decade of rich experience in this business only. We can be your growth and
                                 performance excellence partner to improve OEE using new concept of online regular

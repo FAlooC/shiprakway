@@ -28,7 +28,7 @@ code {
 
 @font-face {
     font-family: 'Lato';
-    src: local('Lato'), url(/public/fonts/Lato-Regular.ttf) format('truetype');
+    src: local('Lato'), url('/fonts/Lato-Regular.ttf') format('truetype');
 }
 
 // Footer
@@ -36,7 +36,7 @@ code {
     h2 {
         font-size: 60px;
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1023px) {
             font-size: 30px;
         }
     }
@@ -46,7 +46,7 @@ code {
         display: block;
         font-size: 28px;
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1023px) {
             font-size: 16px;
         }
     }
@@ -66,7 +66,7 @@ code {
     object-fit: cover;
     object-position: center;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1023px) {
         height: 50vh;
     }
 }
@@ -93,7 +93,7 @@ code {
         }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1023px) {
         display: none;
     }
 }
@@ -107,9 +107,13 @@ iframe {
     height: 550px;
     width: 700px;
     border-radius: 10px;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
         height: 250px;
         width: 320px;
+    }
+    @media only screen and (max-width: 1023px) {
+        height: 400px;
+        width: 620px;
     }
 }
 
@@ -117,7 +121,7 @@ iframe {
 .content {
     font-size: 24px;
     text-align: justify;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1023px) {
         font-size: 20px;
     }
 }
@@ -126,7 +130,7 @@ iframe {
 .heading {
     font-size: 56px;
     font-weight: 300;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1023px) {
         font-size: 30px;
     }
 }
@@ -140,7 +144,7 @@ iframe {
     font-size: 30px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 1023px) {
     .rcorners {
         font-size: 20px;
         border-width: 1px;
@@ -151,7 +155,7 @@ iframe {
 
 .right-box {
     font-size: 40px;
-    @media only screen and (max-width: 390px) {
+    @media only screen and (max-width: 1023px) {
         font-size: 20px;
     }
 }
