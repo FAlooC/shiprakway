@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import Divider from './divider'
 
 const Home = () => {
+    const myRef = useRef()
+
+    const handleClick = () => {
+        window.scrollTo({
+            top: myRef.current.getBoundingClientRect().top - 56,
+            behavior: 'smooth',
+        })
+    }
+
     return (
         <React.Fragment>
             <img className="header" src={process.env.PUBLIC_URL + '/img/header.jpg'} alt="header" />
-            <img className="arrow" src={process.env.PUBLIC_URL + '/img/down-arrow.svg'} alt="down-arrow" />
-            <section className="px-md-5 px-2">
+            <img
+                className="arrow"
+                src={process.env.PUBLIC_URL + '/img/down-arrow.svg'}
+                alt="down-arrow"
+                onClick={handleClick}
+            />
+            <section ref={myRef} className="px-md-5 px-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-12 py-md-5 py-3">

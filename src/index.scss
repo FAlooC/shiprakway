@@ -79,6 +79,7 @@ code {
     left: 50%;
     translate: -50%;
     top: calc(100vh - 60px);
+    cursor: pointer;
     animation: bounce 1s infinite ease-out;
 
     @keyframes bounce {
@@ -107,13 +108,13 @@ iframe {
     height: 550px;
     width: 700px;
     border-radius: 10px;
-    @media only screen and (max-width: 767px) {
-        height: 250px;
-        width: 320px;
-    }
     @media only screen and (max-width: 1023px) {
         height: 400px;
         width: 620px;
+    }
+    @media only screen and (max-width: 767px) {
+        height: 250px;
+        width: 320px;
     }
 }
 
