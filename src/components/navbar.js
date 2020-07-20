@@ -20,7 +20,7 @@ const Navbar = () => {
             </button>
             <div class={'navbar-collapse ' + (isCollapsed ? 'collapse' : '')}>
                 <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-                    <li class="nav-item p-2">
+                    <li class="nav-item p-2" onClick={() => setCollapsed(true)}>
                         <a href="#footer">Contact</a>
                     </li>
                 </ul>
