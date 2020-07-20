@@ -1,16 +1,14 @@
-import React, { useRef, useCallback } from 'react'
+import React, { useCallback } from 'react'
 
 import Divider from './divider'
 
 const Home = () => {
-    const topRef = useRef()
-
     const handleClick = useCallback(() => {
         window.scrollTo({
-            top: topRef.current.getBoundingClientRect().top - 56,
+            top: window.innerHeight - 56,
             behavior: 'smooth',
         })
-    }, [topRef])
+    }, [])
 
     return (
         <React.Fragment>
@@ -21,7 +19,7 @@ const Home = () => {
                 alt="down-arrow"
                 onClick={handleClick}
             />
-            <section ref={topRef} className="px-md-5 px-2">
+            <section className="px-md-5 px-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-12 py-md-5 py-3">

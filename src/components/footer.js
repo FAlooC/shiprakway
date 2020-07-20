@@ -7,10 +7,16 @@ const Footer = () => {
             <Divider className="bg-gray-dark" />
             <h2 className="text-light">Contact Us</h2>
             <Divider className="bg-gray-dark" />
-            <a href="mailto:support@shiprakway.com" className="text-light p-md-3 p-2">
-                support@shiprakway.com
-            </a>
-            <p className="text-light p-md-3 p-2">+91 9850512972</p>
+            <div className="p-lg-3 p-2">
+                <a href="mailto:support@shiprakway.com" className="text-light">
+                    <img className="mx-lg-3 mx-2" src={process.env.PUBLIC_URL + '/img/mail.svg'} alt="mail icon" />
+                    support@shiprakway.com
+                </a>
+            </div>
+            <p className="text-light p-lg-3 p-2">
+                <img className="mx-lg-3 mx-2" src={process.env.PUBLIC_URL + '/img/phone.svg'} alt="mail icon" />
+                +91 9850512972
+            </p>
         </footer>
     )
 }

@@ -15,12 +15,10 @@ const Navbar = () => {
                 />
                 ShiprakWay
             </a>
-            <button class="navbar-toggler" type="button" onClick={() => setCollapsed(!isCollapsed)}>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class={'navbar-collapse ' + (isCollapsed ? 'collapse' : '')}>
-                <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-                    <li class="nav-item p-2" onClick={() => setCollapsed(true)}>
+            <span className="navbar-toggler-icon navbar-toggler border-0" onClick={() => setCollapsed(!isCollapsed)} />
+            <div className={'navbar-collapse ' + (isCollapsed ? 'collapse' : '')}>
+                <ul className="navbar-nav ml-auto mt-2 mt-md-0">
+                    <li className="nav-item p-2" onClick={() => setCollapsed(true)}>
                         <a href="#footer">Contact</a>
                     </li>
                 </ul>
