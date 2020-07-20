@@ -32,7 +32,7 @@ code {
 
 @font-face {
     font-family: 'Lato';
-    src: local('Lato'), url('/fonts/Lato-Regular.ttf') format('truetype');
+    src: local('Lato'), url('/fonts/Lato-Light.ttf') format('truetype');
 }
 
 // app
@@ -41,7 +41,7 @@ code {
 }
 .loaded {
     opacity: 1;
-    transition: opacity 1s 0.2s;
+    transition: opacity 2s 0.2s;
 }
 
 // Footer
@@ -152,6 +152,7 @@ iframe {
 .content {
     font-size: 24px;
     text-align: justify;
+    line-height: 1.6;
     @media only screen and (max-width: 1023px) {
         font-size: 20px;
     }
@@ -179,7 +180,7 @@ iframe {
     .rcorners {
         font-size: 20px;
         border-width: 1px;
-        margin: 8px 0;
+        margin: 10px;
         padding: 10px;
     }
 }
@@ -189,4 +190,9 @@ iframe {
     @media only screen and (max-width: 1023px) {
         font-size: 20px;
     }
+}
+
+// misc
+.w-mc {
+    width: max-content;
 }
