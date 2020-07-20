@@ -3,7 +3,7 @@ import Divider from './divider'
 
 const Footer = () => {
     return (
-        <footer className="bg-gray p-md-4 p-3 text-center footer">
+        <footer id="footer" className="bg-gray p-md-4 p-3 text-center footer">
             <Divider className="bg-gray-dark" />
             <h2 className="text-light">Contact Us</h2>
             <Divider className="bg-gray-dark" />
