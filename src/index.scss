@@ -64,13 +64,53 @@ code {
         }
     }
 
-    a:hover img {
-        filter: invert(81%) sepia(19%) saturate(155%) hue-rotate(241deg) brightness(98%) contrast(83%);
+    div {
+        position: relative;
+
+        span {
+            color: #c393eb;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%);
+            opacity: 0;
+            z-index: -10;
+            transition: top 0.5s 0.5s, z-index 0.5s 0.5s, opacity 0.5s;
+
+            @media only screen and (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+
+        .show {
+            top: 40px;
+            opacity: 1;
+            z-index: 10;
+            transition: all 0.5s;
+            @media only screen and (max-width: 1023px) {
+                top: 25px;
+            }
+        }
     }
 
-    a,
     p {
         font-size: 28px;
+        cursor: pointer;
+        color: map-get($theme-colors, 'light');
+
+        &:hover {
+            color: #c393eb;
+            img {
+                filter: invert(72%) sepia(60%) saturate(3414%) hue-rotate(215deg) brightness(105%) contrast(84%);
+            }
+        }
+
+        &:active {
+            color: map-get($theme-colors, 'secondary');
+            img {
+                filter: invert(17%) sepia(37%) saturate(2375%) hue-rotate(272deg) brightness(97%) contrast(88%);
+            }
+        }
 
         @media only screen and (max-width: 1023px) {
             font-size: 16px;
