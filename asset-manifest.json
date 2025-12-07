@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d58023bc.css",
-    "main.js": "/static/js/main.f20b500a.js",
+    "main.js": "/static/js/main.102266c0.js",
     "static/media/Lato-Light.ttf": "/static/media/Lato-Light.bfc37ff1d5543ecd4ec6.ttf",
     "index.html": "/index.html",
     "main.d58023bc.css.map": "/static/css/main.d58023bc.css.map",
-    "main.f20b500a.js.map": "/static/js/main.f20b500a.js.map"
+    "main.102266c0.js.map": "/static/js/main.102266c0.js.map"
   },
   "entrypoints": [
     "static/css/main.d58023bc.css",
-    "static/js/main.f20b500a.js"
+    "static/js/main.102266c0.js"
   ]
 }
