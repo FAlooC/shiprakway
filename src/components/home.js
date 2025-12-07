@@ -78,7 +78,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-6 col-12 text-primary text-justify">
                             <p className="right-box p-md-4 p-1">
-                                With four decade of rich experience in this business only. We can be your growth and
+                                With four decades of rich experience in this business only. We can be your growth and
                                 performance excellence partner to improve OEE using new concept of online regular
                                 performance review with your plant team using MADAM4 Step Technology
                             </p>
