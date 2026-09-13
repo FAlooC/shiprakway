@@ -129,7 +129,7 @@ img{max-width:100%}
 .hero h1 span,.section h2 span,.results h2 span,.contact h2 span{color:var(--green)}
 .hero-sub{font-size:19px;font-weight:700;margin:0;color:var(--ink)}
 .rule{width:48px;height:3px;background:var(--green);margin:25px 0}
-.hero-copy>p:not(.eyebrow):not(.hero-sub){font-size:17px;max-width:610px;color:#3c4d63}
+.hero-copy>p:not(.eyebrow):not(.hero-sub){font-size:17px;max-width:610px;color:#3c4d63;text-align:justify}
 
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
 .btn{
@@ -168,8 +168,51 @@ img{max-width:100%}
   font-family:"Playfair Display",Georgia,serif;
   font-size:clamp(29px,3.4vw,43px);line-height:1.15;margin:0;color:var(--navy);
 }
-.about-copy{font-size:17px;color:#43546a}
+.about-copy{font-size:17px;color:#43546a;text-align:justify}
 .section-heading{text-align:center;margin-bottom:45px}
+
+/* --- about profile row -------------------------------------------------- */
+.profile-row{
+  margin-top:64px;
+  padding-top:56px;
+  border-top:1px solid var(--line);
+  overflow:hidden;
+}
+
+.profile-role{
+  font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green);margin:0 0 10px;
+}
+.profile-name{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(26px,3vw,38px);line-height:1.1;
+  color:var(--navy);margin:0 0 4px;
+}
+.profile-bio .rule{margin:22px 0 24px}
+.profile-bio p{font-size:16px;color:#43546a;margin:0 0 16px;line-height:1.7;text-align:justify}
+.profile-bio p:last-of-type{margin-bottom:0}
+
+.profile-tags{
+  display:flex;flex-wrap:wrap;gap:9px;
+  list-style:none;margin:28px 0 0;padding:0;
+}
+.profile-tags li{
+  font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--navy);background:rgba(45,166,107,.09);
+  border:1px solid rgba(45,166,107,.30);
+  border-radius:4px;padding:6px 14px;
+}
+
+.profile-photo-wrap{
+  float:right;
+  width:360px;
+  margin:0 0 32px 56px;
+  border-radius:10px;overflow:hidden;
+  border:1px solid var(--line);
+}
+.profile-photo{
+  display:block;width:100%;height:auto;
+}
 
 /* --- expertise cards ---------------------------------------------------- */
 /* flex-wrap + centring so the 7th card doesn't leave a hole in the grid */
@@ -225,11 +268,12 @@ img{max-width:100%}
 .why span{color:var(--muted)}
 
 /* --- industries --------------------------------------------------------- */
-.industry-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.industry-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 .industry{
   background:#fff;border:1px solid var(--line);border-radius:8px;
   padding:22px 12px;text-align:center;font-weight:700;font-size:13px;
   min-height:95px;display:grid;place-items:center;color:var(--navy);
+  flex:0 1 148px;
 }
 
 /* --- results ------------------------------------------------------------ */
@@ -309,7 +353,6 @@ footer{background:#041c37;color:#cbd9e7;padding:55px 0 0}
 @media (max-width:1100px){
   .nav{gap:15px;font-size:11.5px}
   .brand-text b{font-size:17px}
-  .industry-grid{grid-template-columns:repeat(4,1fr)}
   .steps{grid-template-columns:repeat(3,1fr);row-gap:35px}
   .step:not(:last-child)::after{display:none}
   .hero::after{left:calc(50% + min(1180px, 92vw) * 0.02)}
@@ -338,6 +381,7 @@ footer{background:#041c37;color:#cbd9e7;padding:55px 0 0}
   .hero::after{display:none}
 
   .two-col,.results-grid,.contact-grid{grid-template-columns:1fr;gap:38px}
+  .profile-photo-wrap{float:none;width:100%;margin:0 0 32px 0}
   .why-grid{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr 1fr;gap:36px}
   .footer-brand{grid-column:1/-1}
@@ -349,7 +393,8 @@ footer{background:#041c37;color:#cbd9e7;padding:55px 0 0}
   .brand-text b{font-size:16px;letter-spacing:.08em}
   .brand-text i{font-size:8.5px;letter-spacing:.30em}
   .card{max-width:none}
-  .steps,.why-grid,.industry-grid,.result-list{grid-template-columns:1fr}
+  .steps,.why-grid,.result-list{grid-template-columns:1fr}
+  .industry{flex:0 1 calc(50% - 6px)}
   .why-grid{border-left:1px solid var(--line)}
   .contact-form{padding:22px}
   .footer-grid{grid-template-columns:1fr}
