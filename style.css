@@ -203,6 +203,29 @@ img{max-width:100%}
   border-radius:4px;padding:6px 14px;
 }
 
+.profile-bio p.profile-tagline{
+  margin:24px 0 0;text-align:left;
+  font-family:"Playfair Display",Georgia,serif;font-style:italic;
+  font-size:17px;color:var(--navy);
+}
+
+.profile-subhead{
+  font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--navy);margin:28px 0 12px;
+}
+.profile-flow{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;
+  list-style:none;margin:0 0 24px;padding:0;
+}
+.profile-flow li{
+  font-size:13px;font-weight:700;color:#fff;background:var(--navy);
+  border-radius:4px;padding:8px 14px;position:relative;
+}
+.profile-flow li + li::before{
+  content:"\2192";position:absolute;left:-20px;top:50%;transform:translateY(-50%);
+  color:var(--green);font-weight:800;
+}
+
 .profile-photo-wrap{
   float:right;
   width:360px;
